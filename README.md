@@ -137,6 +137,31 @@ Example response:
 
 This project demonstrates the transition from a trained NLP machine learning model to a deployable API that can be consumed by other applications.
 
+## Testing
+
+The API is tested using `pytest` and FastAPI's `TestClient`.
+
+The test suite covers:
+
+* Testing the root endpoint (`GET /`)
+* Testing email prediction (`POST /predict`)
+* Testing valid API responses
+* Testing invalid requests and validation errors
+
+Run the tests with:
+
+```bash
+python -m pytest -v
+```
+
+Example result:
+
+```text
+4 passed
+```
+
+This confirms that all implemented API tests passed successfully.
+
 ## Future Improvements
 
 * Add input validation and error handling
